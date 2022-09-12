@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "NicoMoji-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local("NicoMoji-Regular"),
+         url("../fonts/NicoMoji-Regular.woff2") format("woff2"),
+         url("../fonts/NicoMoji-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "ArodoraPro-Light";
+    font-style: normal;
+    font-weight: 700;
+    src: local("ArodoraPro-Light"),
+         url("../fonts/ArodoraPro-Light.woff2") format("woff2"),
+         url("../fonts/ArodoraPro-Light.woff") format("woff");
+}
+@font-face {
+    font-family: "NEXTART-Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: local("NEXTART-Bold"),
+         url("../fonts/NEXTART-Bold.woff2") format("woff2"),
+         url("../fonts/NEXTART-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: "NEXTART-SemiBold";
+    font-style: normal;
+    font-weight: 600;
+    src: local("NEXTART-Bold"),
+         url("../fonts/NEXTART-SemiBold.woff2") format("woff2"),
+         url("../fonts/NEXTART-SemiBold.woff") format("woff");
+}

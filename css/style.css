@@ -1,0 +1,476 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background: linear-gradient(101.56deg, #2c2c2c 1.56%, #1c1c1c 95.55%);
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.header__logo {
+    font-family: "NicoMoji-Regular", serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+}
+.header__logo span {
+    color: #00c1ec;
+}
+
+.header__menu-link {
+    position: relative;
+    transition: all 0.3s;
+}
+.header__menu-link::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0;
+    right: 0;
+    top: 20px;
+    left: auto;
+    background-color: #e2a300;
+    transition: all 0.3s;
+}
+
+.header__menu-link:hover::before {
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+
+.header__menu {
+    display: inline-flex;
+}
+.header__menu-item {
+    padding-left: 145px;
+    font-family: "ArodoraPro-Light";
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #e4e4e4;
+}
+
+.header__wrapper {
+    margin-top: 100px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__info {
+    width: 465px;
+    color: #e4e4e4;
+    font-family: "NEXT ART", sans-serif;
+}
+.header__subtitle {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    margin-bottom: 27px;
+}
+.header__title {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 82px;
+    margin-bottom: 27px;
+}
+.header__text {
+    font-family: "Arodora Pro", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 27px;
+}
+.header__btn {
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 14px 38px 13px 41px;
+    background: linear-gradient(87.32deg, #e2a300 4.47%, #e29500 95.53%);
+    box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+    border-radius: 6px;
+    margin-bottom: 142px;
+}
+
+.header__image-elipse {
+    position: relative;
+}
+.header__elipse-circle {
+    position: absolute;
+    font-family: "NEXT ART", sans-serif;
+    font-size: 36px;
+    line-height: 41px;
+    padding: 15px;
+    color: #00c4f0;
+    background: linear-gradient(130.68deg, #414141 0%, #2d2d2d 100.52%);
+    border-radius: 50%;
+}
+.html {
+    top: -25px;
+    left: -50px;
+}
+.css {
+    bottom: 33px;
+    left: -74px;
+}
+.git {
+    right: -20px;
+    top: -25px;
+}
+.js {
+    top: 150px;
+    left: -105px;
+}
+.jq {
+    top: 150px;
+    right: -105px;
+}
+.fig {
+    bottom: 33px;
+    right: -65px;
+}
+
+.header__image-elipse {
+    border-radius: 50%;
+    height: 575px;
+    width: 575px;
+    border: 67px solid #00c4f0;
+    filter: drop-shadow(0px 0px 152px rgba(0, 196, 240, 0.42));
+    position: relative;
+}
+
+.header__images-img {
+    position: absolute;
+    top: 90px;
+    right: 17%;
+}
+
+.main {
+    background: linear-gradient(130.68deg, #414141 0%, #2d2d2d 100.52%);
+}
+
+.info {
+    padding: 50px 0;
+}
+.info__inner {
+    background: #2a2a2a;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
+    border-radius: 29px;
+    display: flex;
+    padding: 30px;
+    width: 770px;
+    margin: 0 auto;
+}
+.info__image {
+    margin-right: 50px;
+}
+
+.info__list-item {
+    font-family: "Arodora Pro", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #e4e4e4;
+    position: relative;
+    padding-left: 35px;
+}
+.info__list-item::before {
+    position: absolute;
+    content: "";
+    padding-left: 35px;
+    width: 25px;
+    background-color: #e2a300;
+    height: 1px;
+    top: 13px;
+    left: -25px;
+}
+.info__list-item span {
+    color: #00c4f0;
+}
+
+.about {
+    margin-top: 100px;
+    margin-bottom: 180px;
+}
+
+.about__info {
+    width: 496px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 15;
+}
+.about__text-spancourse {
+    color: #e2a200;
+}
+.about__text {
+    padding: 63px;
+    font-family: "Arodora Pro", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    background: #2c2c2c;
+    border-radius: 14px;
+}
+.about__elipse-lg {
+    position: absolute;
+    background-image: url(../images/elipse-lg.png);
+    top: -33px;
+    left: -120%;
+    z-index: -1;
+    width: 322px;
+    height: 922px;
+}
+.about__elipse-sm {
+    position: absolute;
+    background-image: url(../images/elipse-sm.png);
+    top: -75px;
+    right: -57%;
+    z-index: -1;
+    width: 472px;
+    height: 273px;
+}
+.about__elipse-md {
+    position: absolute;
+    background-image: url(../images/elipse-md.png);
+    left: 45%;
+    bottom: -25%;
+    z-index: -1;
+    width: 600px;
+    height: 608px;
+}
+.about__title {
+    font-weight: 400;
+    font-family: "NEXT ART", sans-serif;
+    font-size: 48px;
+    line-height: 31px;
+    color: #e4e4e4;
+    margin-bottom: -35px;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+}
+.about__photo-1 {
+    position: absolute;
+    top: 185px;
+    left: 98%;
+    border: 23px solid #2c2c2c;
+    border-radius: 14px;
+}
+.about__photo-2 {
+    position: absolute;
+    top: 0;
+    left: -58%;
+    border: 23px solid #2c2c2c;
+    border-radius: 14px;
+}
+.about__photo-3 {
+    position: absolute;
+    bottom: -32px;
+    left: -57%;
+    border: 23px solid #2c2c2c;
+    border-radius: 14px;
+}
+.about__photo {
+    display: block;
+    border: 6px solid grey;
+}
+.portfolio {
+    padding: 100px 0 150px;
+    background: linear-gradient(101.56deg, #2c2c2c 1.56%, #1c1c1c 95.55%);
+}
+.portfolio__title {
+    text-align: center;
+    font-family: "NEXT ART", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 54px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.portfolio__slider-item {
+    background: linear-gradient(130.68deg, #414141 0%, #2d2d2d 100.52%);
+    box-shadow: 0px 4px 15px rgba(27, 27, 27, 0.28);
+    border-radius: 29px;
+    padding: 50px;
+}
+.portfolio__slider-inner {
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio__image img {
+    border-radius: 29px;
+}
+.portfolio__info {
+    width: 460px;
+}
+.portfolio__slider-title {
+    color: #ffffff;
+    font-family: "Arodora Pro", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+.portfolio__slider-title span {
+    color: #00c4f0;
+}
+.portfolio__slider-text {
+    font-family: "Arodora Pro", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+}
+.portfolio__slider-list {
+    font-family: "Arodora Pro", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    padding-left: 40px;
+    position: relative;
+}
+.portfolio__list-item {
+    position: relative;
+}
+.portfolio__list-item::before {
+    position: absolute;
+    content: "";
+    padding-left: 30px;
+    width: 25px;
+    background-color: #e2a300;
+    height: 1px;
+    top: 10px;
+    left: -41px;
+}
+
+.portfolio__slider {
+    position: relative;
+}
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    font-size: 0;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.slick-next {
+    position: absolute;
+    right: -100px;
+    background-image: url(../images/slick-arrow-next.svg);
+}
+
+.slick-prev {
+    position: absolute;
+    left: -100px;
+    background-image: url(../images/slick-arrow-prev.svg);
+}
+.slick-next:hover {
+    transform: scale(1.7);
+}
+
+.slick-prev:hover {
+    transform: scale(1.7);
+}
+.portfolio__slider-btn {
+    margin-top: 100px;
+    display: inline-block;
+    font-family: "Arodora Pro", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    padding: 15px 35px;
+    background-color: #00c4f0;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+.portfolio__slider-btn:hover {
+    background-color: #0d7d96;
+}
+.footer {
+    background: linear-gradient(130.68deg, #414141 0%, #2d2d2d 100.52%);
+    padding: 50px 0;
+    font-family: "Arodora Pro", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #E4E4E4;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 970px;
+    margin: 0 auto;
+}
+.footer__menu-item {
+    padding-bottom: 18px;
+}
+.footer__contacts-item {
+    padding-bottom: 18px;
+}
+.footer__contacts-title {
+    padding-bottom: 18px;
+}
+
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
